@@ -2,16 +2,16 @@
 
 if [ $# -lt 4 ]
 then
-echo "Few arguments!"
-exit 1
+ echo "Few arguments!"
+ exit
 fi
 
 while getopts "f:l:a" opt
 do
 case $opt in
-f) nameFile=$OPTARG;;
-l) line=$OPTARG;;
-a) check=1;;
+ f) nameFile=$OPTARG;;
+ l) line=$OPTARG;;
+ a) check=1;;
 esac
 done
 
